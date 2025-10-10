@@ -1,14 +1,28 @@
-import NavBar from "../components/navBar"
+import NavBar from "../components/NavBar"
 
 
 const Home = () => {
 
     return (
         <>
-            <div className="header">
+            <header className="header">
                 <NavBar />
-            </div>
-            Home
+            </header>
+            <main>
+                <section className="newThings">
+
+                </section>
+                <section className="personalInfo">
+
+                </section>
+                <section className="recommendations">
+
+                </section>
+            </main>
+
+            <footer>
+
+            </footer>
         </>
     )
 }
