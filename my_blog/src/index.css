@@ -1,7 +1,0 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@100..900&family=Playpen+Sans:wght@500&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-@import 'tailwindcss';
-
-@theme {
-    --color-primary: #1E90FF;
-    --font-roboto: "Roboto"
-}
