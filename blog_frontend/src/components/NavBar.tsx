@@ -5,7 +5,7 @@ const NavBar = () => {
     return (
         <div className="container px-4 mx-auto flex justify-between  py-4">
             <div className="header_left flex  items-center justify-between gap-8" >
-                <div className="left_icons flex  justify-between items-center gap-2 ">
+                <a href="/" className="left_icons flex  justify-between items-center gap-2 ">
                     <svg width="48" height="48" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
 
                         <path
@@ -28,13 +28,13 @@ const NavBar = () => {
                         <path d="M10 16H18" stroke="#F0F0F0" strokeWidth="1" />
                     </svg>
                     <span className="text-xl  font-roboto font-semibold">Skye's Blog</span>
-                </div>
+                </a>
                 <div className="right_links flex  gap-6 items-center  tracking-wide">
-                    <a href="#" className="text-sm font-roboto font-medium hover:text-primary transition-colors duration-300">首页</a>
-                    <a href="#" className="text-sm font-roboto font-medium hover:text-primary transition-colors duration-300">文章</a>
-                    <a href="#" className="text-sm font-roboto font-medium hover:text-primary transition-colors duration-300">项目</a>
-                    <a href="#" className="text-sm font-roboto font-medium hover:text-primary transition-colors duration-300">关于我</a>
-                    <a href="#" className="text-sm font-roboto font-medium hover:text-primary transition-colors duration-300">友情链接</a>
+                    <a href="/" className="text-sm font-roboto font-medium hover:text-primary transition-colors duration-300">首页</a>
+                    <a href="/articles" className="text-sm font-roboto font-medium hover:text-primary transition-colors duration-300">文章</a>
+                    <a href="/projects" className="text-sm font-roboto font-medium hover:text-primary transition-colors duration-300">项目</a>
+                    <a href="/about" className="text-sm font-roboto font-medium hover:text-primary transition-colors duration-300">关于我</a>
+                    <a href="/friends" className="text-sm font-roboto font-medium hover:text-primary transition-colors duration-300">友情链接</a>
                 </div>
             </div>
             <div className="header_right flex  justify-between items-center gap-2">
