@@ -1,4 +1,5 @@
 // 文章集页
+import Contents from "../components/Contents"
 import NavBar from "../components/NavBar"
 
 function Articles() {
@@ -8,7 +9,7 @@ function Articles() {
         <NavBar />
       </header>
       <main>
-        文章
+        <Contents contentType="文章"/>
       </main>
       <footer></footer>
     </>
