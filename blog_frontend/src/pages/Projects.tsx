@@ -1,4 +1,5 @@
 // 项目集页
+import Contents from "../components/Contents";
 import NavBar from "../components/NavBar";
 
 function Projects() {
@@ -8,7 +9,7 @@ function Projects() {
         <NavBar />
       </header>
       <main>
-        项目
+        <Contents contentType="项目"/>
       </main>
       <footer></footer>
     </>

@@ -4,7 +4,7 @@ import Home from '../pages/Home';
 import Articles from '../pages/Articles';
 import Projects from '../pages/Projects';
 import About from '../pages/About';
-import Friends from '../pages/friends';
+import Friends from '../pages/Friends';
 
 
 
