@@ -1,10 +1,15 @@
 import SearchBox from "./SearchBox";
 
-const NavBar = () => {
+interface BlogOwner {
+    name: string;
+
+}
+
+const NavBar = ({ name }: BlogOwner) => {
 
     return (
-        <div className="container px-4 mx-auto flex justify-between  py-4">
-            <div className="header_left flex  items-center justify-between gap-8" >
+        <div className='container px-4 mx-auto flex justify-between py-4 '>
+            <div className="header_left flex items-center justify-between gap-8" >
                 <a href="/" className="left_icons flex  justify-between items-center gap-2 ">
                     <svg width="48" height="48" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
 
@@ -27,7 +32,7 @@ const NavBar = () => {
                         <path d="M10 13H14" stroke="#F0F0F0" strokeWidth="1" />
                         <path d="M10 16H18" stroke="#F0F0F0" strokeWidth="1" />
                     </svg>
-                    <span className="text-xl  font-roboto font-semibold">Skye's Blog</span>
+                    <span className="text-xl  font-roboto font-semibold">{name}'s Blog</span>
                 </a>
                 <div className="right_links flex  gap-6 items-center  tracking-wide">
                     <a href="/" className="text-sm font-roboto font-medium hover:text-primary transition-colors duration-300">首页</a>
