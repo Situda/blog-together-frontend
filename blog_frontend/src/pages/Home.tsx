@@ -2,10 +2,11 @@
 import ScrollAwareHeader from "../components/ScrollAwareHeader";
 import Footer from "../components/Footer";
 import { Link } from 'react-router-dom'
-
+import useTitle from "../hooks/useTitle";
 
 function Home() {
 
+    useTitle('Home')
 
     return (
         <div className="relative w-full">
@@ -41,7 +42,7 @@ function Home() {
                             <Link to='/recently' className="py-3 px-1">最新更新</Link>
                         </div>
                         <div className="content flex flex-col gap-6">
-                            <article className="flex gap-6 hover:shadow-xl p-4 transition-all duration-300 rounded-lg">
+                            <article className="flex gap-6 hover:shadow-xl cursor-pointer p-4 transition-all duration-300 rounded-lg">
                                 <div className="img bg-[url('https://p4.music.126.net/PA01TRYxcT28W_3B_SoPKw==/109951169026162735.jpg')] 
                                     bg-center bg-no-repeat bg-cover h-40 w-50 
                                 ">
@@ -52,7 +53,7 @@ function Home() {
                                     <p className="text-sm text-slate-500">我们将在这一篇文章中详解跨域问题</p>
                                 </div>
                             </article>
-                            <article className="flex gap-6 hover:shadow-xl p-4 transition-all duration-300 rounded-lg">
+                            <article className="flex gap-6 hover:shadow-xl cursor-pointer p-4 transition-all duration-300 rounded-lg">
                                 <div className="img bg-[url('https://p4.music.126.net/PA01TRYxcT28W_3B_SoPKw==/109951169026162735.jpg')] 
                                     bg-center bg-no-repeat bg-cover h-40 w-50
                                 ">

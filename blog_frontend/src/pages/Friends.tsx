@@ -1,13 +1,15 @@
 // 友情链接页
 
-import NavBar from "../components/NavBar";
+import ScrollAwareHeader from "../components/ScrollAwareHeader";
+import useTitle from "../hooks/useTitle";
 
 function Friends() {
+
+  useTitle(' Friendly Links ')
+
   return (
     <>
-      <header>
-        <NavBar />
-      </header>
+      <ScrollAwareHeader name='Skye' />
       <main>
         友情链接
       </main>
