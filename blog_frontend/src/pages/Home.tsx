@@ -1,39 +1,15 @@
 // 首页
-import NavBar from "../components/NavBar"
+import ScrollAwareHeader from "../components/ScrollAwareHeader";
 import Footer from "../components/Footer";
 import { Link } from 'react-router-dom'
-import { useRef, useEffect } from 'react'
+
 
 function Home() {
 
-    const headerRef = useRef<HTMLElement>(null);
-    const sentinelRef = useRef<HTMLDivElement>(null);
 
-    useEffect(() => {
-        const observer = new IntersectionObserver(([entry]) => {
-            if (!entry.isIntersecting && headerRef.current) {
-                (headerRef.current as HTMLElement).className = "header fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-sm -translate-y-2 shadow-md transition-all duration-300";
-            } else if (entry.isIntersecting && headerRef.current) {
-                (headerRef.current as HTMLElement).className = "header fixed top-0 left-0 right-0 z-50 bg-white transition-all duration-300";
-            }
-        })
-        if (sentinelRef.current && headerRef.current) {
-            observer.observe(sentinelRef.current)
-        }
-
-        // 清理函数
-        return () => {
-            if (sentinelRef.current) {
-                observer.unobserve(sentinelRef.current);
-            }
-        };
-    }, [])
     return (
         <div className="relative w-full">
-            <div ref={sentinelRef} className="h-10 absolute top-0 left-0 right-0"></div>
-            <header ref={headerRef} className="header fixed top-0 left-0 right-0 z-50 bg-white">
-                <NavBar name='Skye' />
-            </header>
+            <ScrollAwareHeader name='Skye' />
             <main className=" sm:pt-20 md:pt-20 lg:pt-20 ">
                 <div className="container mx-auto px-4 ">
                     <section className="newThings mb-12">
