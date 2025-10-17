@@ -1,15 +1,17 @@
 // 文章集页
 import Contents from "../components/Contents"
-import NavBar from "../components/NavBar"
+import ScrollAwareHeader from "../components/ScrollAwareHeader";
+import useTitle from "../hooks/useTitle";
 
 function Articles() {
+
+  useTitle('Articles')
+
   return (
     <>
-      <header>
-        <NavBar />
-      </header>
+      <ScrollAwareHeader name='Skye' />
       <main>
-        <Contents contentType="文章"/>
+        <Contents contentType="文章" />
       </main>
       <footer></footer>
     </>

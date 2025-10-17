@@ -1,12 +1,14 @@
 // 关于我页
-import NavBar from "../components/NavBar";
+import ScrollAwareHeader from "../components/ScrollAwareHeader";
+import useTitle from "../hooks/useTitle";
 
 function About() {
+
+  useTitle('About me')
+
   return (
     <>
-      <header>
-        <NavBar />
-      </header>
+      <ScrollAwareHeader name='Skye' />
       <main>
         关于我
       </main>
